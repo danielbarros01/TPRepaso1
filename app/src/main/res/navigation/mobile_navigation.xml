@@ -21,4 +21,13 @@
         android:name="com.example.mimenu.ui.musica.MusicaFragment"
         android:label="fragment_musica"
         tools:layout="@layout/fragment_musica" />
+    <dialog
+        android:id="@+id/nav_salir"
+        android:name="com.example.mimenu.Alerta"
+        android:label="Salir" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.mimenu.LoginActivity"
+        android:label="activity_login2"
+        tools:layout="@layout/activity_login2" />
 </navigation>

@@ -16,5 +16,10 @@
             android:id="@+id/nav_music"
             android:icon="@android:drawable/ic_lock_silent_mode_off"
             android:title="Reproducir musica" />
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:title="Salir"
+            />
     </group>
 </menu>

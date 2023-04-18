@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/> <!--Android 10 en adelante, location en 2do plano-->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -17,30 +17,31 @@
         android:theme="@style/Theme.MiMenu"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <!--Codigo agregado para usar maps-->
+
+        <!-- Codigo agregado para usar maps -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDsmTKS7DqquAsf3GWuZm5DgM0H0K_3axQ"/>
-        <!--  - - - - - - - - -  - - -  - - -->
-
-        <!--Para que ande la musica-->
+            android:value="AIzaSyDsmTKS7DqquAsf3GWuZm5DgM0H0K_3axQ" /> <!-- - - - - - - - - -  - - -  - - -->
+        <!-- Para que ande la musica -->
         <service
             android:name=".ui.musica.ServicioMusical"
             android:enabled="true"
-            android:exported="true"></service>
-        <!---->
-
+            android:exported="true" /> <!--  -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.MiMenu.NoActionBar">
+            android:label="Inicio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MiMenu.NoActionBar"/>
     </application>
 
 </manifest>
