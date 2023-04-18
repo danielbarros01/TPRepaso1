@@ -22,6 +22,14 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDsmTKS7DqquAsf3GWuZm5DgM0H0K_3axQ"/>
         <!--  - - - - - - - - -  - - -  - - -->
+
+        <!--Para que ande la musica-->
+        <service
+            android:name=".ui.musica.ServicioMusical"
+            android:enabled="true"
+            android:exported="true"></service>
+        <!---->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
